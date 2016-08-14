@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "94413613e7e096d4d678"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "f501b2cc1b7cdd0f3dea"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -28020,37 +28020,49 @@
 	        { id: 'bhTitle' },
 	        'Bloodhound'
 	      ),
-	      _react3.default.createElement('hr', null),
 	      _react3.default.createElement(
 	        'h4',
 	        { id: 'slogan' },
-	        'live strong'
+	        'search. give. save.'
 	      ),
+	      _react3.default.createElement('hr', null),
 	      _react3.default.createElement(
 	        'button',
-	        null,
+	        { id: 'buttons' },
 	        _react3.default.createElement(
 	          _reactRouter.Link,
 	          { to: '/home' },
-	          'Home'
+	          _react3.default.createElement(
+	            'span',
+	            { className: 'titleButtons' },
+	            'Home'
+	          )
 	        )
 	      ),
 	      _react3.default.createElement(
 	        'button',
-	        null,
+	        { id: 'buttons' },
 	        _react3.default.createElement(
 	          _reactRouter.Link,
 	          { to: '/registration' },
-	          'Registration'
+	          _react3.default.createElement(
+	            'span',
+	            { className: 'titleButtons' },
+	            'Registration'
+	          )
 	        )
 	      ),
 	      _react3.default.createElement(
 	        'button',
-	        null,
+	        { id: 'buttons' },
 	        _react3.default.createElement(
 	          _reactRouter.Link,
 	          { to: '/searchdonors' },
-	          'Search Donors'
+	          _react3.default.createElement(
+	            'span',
+	            { className: 'titleButtons' },
+	            'Search Donors'
+	          )
 	        )
 	      ),
 	      _react3.default.createElement('br', null),
@@ -34568,50 +34580,26 @@
 	    console.log('Registration');
 	    return _react3.default.createElement(
 	      'div',
-	      null,
-	      _react3.default.createElement(
-	        'li',
-	        null,
-	        _react3.default.createElement('input', { type: 'text', value: this.state.fname, placeholder: 'First Name', onChange: this.onInputChange })
-	      ),
-	      _react3.default.createElement(
-	        'li',
-	        null,
-	        _react3.default.createElement('input', { type: 'text', value: this.state.lname, placeholder: 'Last Name', onChange: this.onInputChangeLast })
-	      ),
-	      _react3.default.createElement(
-	        'li',
-	        null,
-	        _react3.default.createElement('input', { type: 'text', value: this.state.bloodtype, placeholder: 'Blood Type', onChange: this.onInputChangeBloodType })
-	      ),
-	      _react3.default.createElement(
-	        'li',
-	        null,
-	        _react3.default.createElement('input', { type: 'text', value: this.state.age, placeholder: 'Age', onChange: this.onInputChangeAge })
-	      ),
-	      _react3.default.createElement(
-	        'li',
-	        null,
-	        _react3.default.createElement('input', { type: 'text', value: this.state.address, placeholder: 'Address', onChange: this.onInputChangeAddress })
-	      ),
-	      _react3.default.createElement(
-	        'li',
-	        null,
-	        _react3.default.createElement('input', { type: 'text', value: this.state.state, placeholder: 'State', onChange: this.onInputChangeState })
-	      ),
-	      _react3.default.createElement(
-	        'li',
-	        null,
-	        _react3.default.createElement('input', { type: 'text', value: this.state.country, placeholder: 'Country', onChange: this.onInputChangeCountry })
-	      ),
-	      _react3.default.createElement(
-	        'li',
-	        null,
-	        _react3.default.createElement('input', { type: 'text', value: this.state.phonenumber, placeholder: 'Phone Number', onChange: this.onInputChangePhone })
-	      ),
+	      { id: 'regForm' },
+	      _react3.default.createElement('input', { className: 'form-control', type: 'text', value: this.state.fname, placeholder: 'First Name', onChange: this.onInputChange }),
+	      _react3.default.createElement('br', null),
+	      _react3.default.createElement('input', { className: 'form-control', type: 'text', value: this.state.lname, placeholder: 'Last Name', onChange: this.onInputChangeLast }),
+	      _react3.default.createElement('br', null),
+	      _react3.default.createElement('input', { className: 'form-control', type: 'text', value: this.state.bloodtype, placeholder: 'Blood Type', onChange: this.onInputChangeBloodType }),
+	      _react3.default.createElement('br', null),
+	      _react3.default.createElement('input', { className: 'form-control', type: 'text', value: this.state.age, placeholder: 'Age', onChange: this.onInputChangeAge }),
+	      _react3.default.createElement('br', null),
+	      _react3.default.createElement('input', { className: 'form-control', type: 'text', value: this.state.address, placeholder: 'Address', onChange: this.onInputChangeAddress }),
+	      _react3.default.createElement('br', null),
+	      _react3.default.createElement('input', { className: 'form-control', type: 'text', value: this.state.state, placeholder: 'State', onChange: this.onInputChangeState }),
+	      _react3.default.createElement('br', null),
+	      _react3.default.createElement('input', { className: 'form-control', type: 'text', value: this.state.country, placeholder: 'Country', onChange: this.onInputChangeCountry }),
+	      _react3.default.createElement('br', null),
+	      _react3.default.createElement('input', { className: 'form-control', type: 'text', value: this.state.phonenumber, placeholder: 'Phone Number', onChange: this.onInputChangePhone }),
+	      _react3.default.createElement('br', null),
 	      _react3.default.createElement(
 	        'button',
-	        { className: 'btn btn-success btn-sm', onClick: this.addDonor },
+	        { id: 'submitButton', className: 'btn btn-success btn-sm', onClick: this.addDonor },
 	        'submit'
 	      )
 	    );
@@ -34769,8 +34757,7 @@
 	      return res.json();
 	    })
 	    /*.then(data => {
-	      
-	      this.setState({data:data});
+	       this.setState({data:data});
 	    })*/
 	    //hi
 	    .catch(function (err) {
@@ -34936,8 +34923,8 @@
 	      { className: "dropdown" },
 	      _react3.default.createElement(
 	        "button",
-	        { className: "dropbtn" },
-	        "Dropdown"
+	        { id: "bloodButton", className: "dropbtn" },
+	        "Blood type"
 	      ),
 	      _react3.default.createElement(
 	        "div",
@@ -35160,7 +35147,7 @@
 
 
 	// module
-	exports.push([module.id, "#bhTitle {\ntext-align:center;\nfont-family: 'Montserrat', sans-serif;\nfont-weight: bolder;\nfont-size:85px;\n}\n\n#slogan {\n  font-family: 'Montserrat', sans-serif;\n  text-align:center;\n  margin-right: 350px;\n  font-size: 30px\n}\n\n.dropbtn {\n    background-color: #4CAF50;\n    color: white;\n    padding: 16px;\n    font-size: 16px;\n    border: none;\n    cursor: pointer;\n}\n\n.dropdown {\n    position: relative;\n    display: inline-block;\n}\n\n.dropdown-content {\n    display: none;\n    position: absolute;\n    background-color: #f9f9f9;\n    min-width: 160px;\n    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\n}\n\n.dropdown-content a {\n    color: black;\n    padding: 12px 16px;\n    text-decoration: none;\n    display: block;\n}\n\n.dropdown-content a:hover {background-color: #f1f1f1}\n\n.dropdown:hover .dropdown-content {\n    display: block;\n}\n\n.dropdown:hover .dropbtn {\n    background-color: #3e8e41;\n}\n\n\n\n\nhr {\n    border-top: 11px solid #ef5350;\n}", ""]);
+	exports.push([module.id, "body {\n  height:1500px;\n}\n\n\n#bhTitle {\ntext-align:center;\nfont-family: 'Montserrat', sans-serif;\nfont-weight: bolder;\nfont-size:85px;\n}\n\n#slogan {\n  font-family: 'Montserrat', sans-serif;\n  text-align:center;\n  margin-right: 250px;\n  font-size: 30px\n}\n\n.dropbtn {\n    background-color: #4CAF50;\n    color: white;\n    padding: 8px;\n    font-size: 16px;\n    border: none;\n    border-radius: 5px;\n    cursor: pointer;\n}\n\n.dropdown {\n    position: relative;\n    display: inline-block;\n}\n\n.dropdown-content {\n    display: none;\n    position: absolute;\n    background-color: #f9f9f9;\n    min-width: 160px;\n    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\n}\n\n.dropdown-content a {\n    color: black;\n    padding: 12px 16px;\n    text-decoration: none;\n    display: block;\n}\n\n.dropdown-content a:hover {background-color: #f1f1f1}\n\n.dropdown:hover .dropdown-content {\n    display: block;\n}\n\n.dropdown:hover .dropbtn {\n    background-color: #3e8e41;\n}\n\nhr {\n    border-top: 15px solid #ef5350;\n    width:75%;\n}\n\n.titleButtons {\n  font-family: 'Montserrat', sans-serif;\n  border-style: hidden;\n  text-decoration: none;\n  background-color: #fff;\n  width: 300px;\n  text-align:center;\n  color:black;\n  margin-left: 52px;\n}\n\n#regForm {\n  margin-left: 119px;\n  margin-top:25px;\n}\n\n#submitButton {\n  margin-top: 20px;\n}\n\ninput {\n  font-family: 'Montserrat', sans-serif;\n}\n.form-control {\n  width:86%;\n}\n\n#buttons {\n  background-color: white;\n  width:250px;\n  font-size:24px;\n  margin-left: 70px;\n  border-style: none;\n}\n.titleButtons {\n  text-decoration: none;\n  background-color:none;\n}\n\n#bloodButton {\n  margin-top:35px;\n  margin-left: 145px;\n}\ntable {\n  margin-left: 145px;\n  margin-top:35px;\n}\n", ""]);
 
 	// exports
 

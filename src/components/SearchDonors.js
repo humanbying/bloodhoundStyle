@@ -9,19 +9,19 @@ const SearchDonors = React.createClass({
 
 
   DeleteMe :function(id){
- 
+
    var url = `/bloodhounds/${id}`
     fetch(url,
     {
       method: "DELETE",
       headers:{  "Content-type": "application/json"  },
-      
+
     })
       .then(res => {
       return res.json();
     })
     /*.then(data => {
-      
+
       this.setState({data:data});
     })*/
     //hi
@@ -38,20 +38,20 @@ const SearchDonors = React.createClass({
       method: "GET",
       headers : {
         "Content-type":"application/json"
-      }   
+      }
     })
     .then(res => {
       return res.json();
     })
     .then(data => {
-      
+
       this.setState({data:data});
     })
     .catch(err => console.log('err','err'))
 
   },
 
-  
+
   clickedMe1: function(event){
    var url=`/bloodhounds/${btn1.value}`
     fetch(url,
@@ -59,13 +59,13 @@ const SearchDonors = React.createClass({
       method: "GET",
       headers : {
         "Content-type":"application/json"
-      }   
+      }
     })
     .then(res => {
       return res.json();
     })
     .then(data => {
-      
+
       this.setState({data:data});
     })
     .catch(err => console.log('err','err'))
@@ -79,18 +79,18 @@ const SearchDonors = React.createClass({
       method: "GET",
       headers : {
         "Content-type":"application/json"
-      }   
+      }
     })
     .then(res => {
       return res.json();
     })
     .then(data => {
-      
+
       this.setState({data:data});
     })
     .catch(err => console.log('err','err'))
   },
- 
+
 
    clickedMe3: function(event){
      var url=`/bloodhounds/${btn3.value}`
@@ -99,13 +99,13 @@ const SearchDonors = React.createClass({
       method: "GET",
       headers : {
         "Content-type":"application/json"
-      }   
+      }
     })
     .then(res => {
       return res.json();
     })
     .then(data => {
-      
+
       this.setState({data:data});
     })
     .catch(err => console.log('err','err'))
@@ -118,13 +118,13 @@ const SearchDonors = React.createClass({
       method: "GET",
       headers : {
         "Content-type":"application/json"
-      }   
+      }
     })
     .then(res => {
       return res.json();
     })
     .then(data => {
-      
+
       this.setState({data:data});
     })
     .catch(err => console.log('err','err'))
@@ -137,13 +137,13 @@ const SearchDonors = React.createClass({
       method: "GET",
       headers : {
         "Content-type":"application/json"
-      }   
+      }
     })
     .then(res => {
       return res.json();
     })
     .then(data => {
-      
+
       this.setState({data:data});
     })
     .catch(err => console.log('err','err'))
@@ -157,13 +157,13 @@ const SearchDonors = React.createClass({
       method: "GET",
       headers : {
         "Content-type":"application/json"
-      }   
+      }
     })
     .then(res => {
       return res.json();
     })
     .then(data => {
-      
+
       this.setState({data:data});
     })
     .catch(err => console.log('err','err'))
@@ -178,13 +178,13 @@ const SearchDonors = React.createClass({
       method: "GET",
       headers : {
         "Content-type":"application/json"
-      }   
+      }
     })
     .then(res => {
       return res.json();
     })
     .then(data => {
-      
+
       this.setState({data:data});
     })
     .catch(err => console.log('err','err'))
@@ -193,7 +193,7 @@ const SearchDonors = React.createClass({
     console.log('in donors page');
     return (
      <div className="dropdown">
-       <button className="dropbtn">Dropdown</button>
+       <button id = "bloodButton" className="dropbtn">Blood type</button>
        <div className="dropdown-content">
           <div>
             <button onClick ={this.clickedMe0}id="btn0" value ="O+">O+</button>
@@ -207,7 +207,7 @@ const SearchDonors = React.createClass({
          </div>
       </div>
         <DataDisplay data = {this.state.data} delete={this.DeleteMe}/>
- 
+
 
   </div>
 
@@ -224,7 +224,7 @@ const DataDisplay = React.createClass({
 
 
   },
- 
+
 
  ModifyMe :function(){
    console.log("delete me");
@@ -265,7 +265,7 @@ const DataDisplay = React.createClass({
         </table>
         )
 
-    
+
   }
 
 

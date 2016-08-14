@@ -15,7 +15,7 @@ const Registration = React.createClass({
 
   onInputChange: function(event){
     this.setState({fname:event.target.value});
- 
+
   },
   onInputChangeLast: function(event){
     this.setState({lname:event.target.value});
@@ -58,18 +58,16 @@ const Registration = React.createClass({
   render(){
     console.log('Registration');
     return (
-      <div> 
-        
-          <li><input type="text" value ={this.state.fname} placeholder = "First Name" onChange = {this.onInputChange}/></li>
-          <li><input type="text" value ={this.state.lname}placeholder = "Last Name" onChange = {this.onInputChangeLast} /></li>
-          <li><input type="text" value ={this.state.bloodtype}placeholder = "Blood Type" onChange ={this.onInputChangeBloodType}/></li>
-          <li><input type="text" value ={this.state.age}placeholder = "Age" onChange ={this.onInputChangeAge}/></li>
-          <li><input type="text" value ={this.state.address}placeholder = "Address" onChange ={this.onInputChangeAddress}/></li>
-          <li><input type="text" value ={this.state.state}placeholder = "State"onChange ={this.onInputChangeState}/></li>
-           <li><input type="text" value ={this.state.country}placeholder = "Country"onChange ={this.onInputChangeCountry}/></li>
-          <li><input type="text" value ={this.state.phonenumber}placeholder = "Phone Number"onChange ={this.onInputChangePhone}/></li>
-          <button className="btn btn-success btn-sm" onClick={this.addDonor}>submit</button>
-        
+      <div id = "regForm">
+          <input className="form-control" type="text" value ={this.state.fname} placeholder = "First Name" onChange = {this.onInputChange}/><br/>
+          <input className="form-control" type="text" value ={this.state.lname}placeholder = "Last Name" onChange = {this.onInputChangeLast}/><br/>
+          <input className="form-control" type="text" value ={this.state.bloodtype}placeholder = "Blood Type" onChange ={this.onInputChangeBloodType}/><br/>
+          <input className="form-control" type="text" value ={this.state.age}placeholder = "Age" onChange ={this.onInputChangeAge}/><br/>
+          <input className="form-control" type="text" value ={this.state.address}placeholder = "Address" onChange ={this.onInputChangeAddress}/><br/>
+          <input className="form-control" type="text" value ={this.state.state}placeholder = "State"onChange ={this.onInputChangeState}/><br/>
+          <input className="form-control" type="text" value ={this.state.country}placeholder = "Country"onChange ={this.onInputChangeCountry}/><br/>
+          <input className="form-control" type="text" value ={this.state.phonenumber}placeholder = "Phone Number"onChange ={this.onInputChangePhone}/><br/>
+          <button id = "submitButton" className="btn btn-success btn-sm" onClick={this.addDonor}>submit</button>
       </div>
     )
   }

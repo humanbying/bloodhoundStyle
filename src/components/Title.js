@@ -8,24 +8,24 @@ render(){
     return (
       <div>
         <h1 id="bhTitle">Bloodhound</h1>
+        <h4 id="slogan">search. give. save.</h4>
         <hr/>
-        <h4 id="slogan">live strong</h4>
-        <button>
-        <Link to = '/home'>Home</Link>
-        </button>
-        
-        
-        <button>
-        <Link to = '/registration'>Registration</Link>
+        <button id="buttons">
+        <Link to = '/home'><span className="titleButtons">Home</span></Link>
         </button>
 
-        
-        <button>
-        <Link to = '/searchdonors'>Search Donors</Link>
+
+        <button id="buttons">
+        <Link to = '/registration'><span className="titleButtons">Registration</span></Link>
+        </button>
+
+
+        <button id="buttons">
+        <Link to = '/searchdonors'><span className="titleButtons">Search Donors</span></Link>
         </button>
         <br/>
 
-        
+
         {this.props.children}
       </div>
     )
