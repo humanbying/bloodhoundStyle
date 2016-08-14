@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "f501b2cc1b7cdd0f3dea"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "a28297adb05cb700e47a"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -28018,7 +28018,8 @@
 	      _react3.default.createElement(
 	        'h1',
 	        { id: 'bhTitle' },
-	        'Bloodhound'
+	        'Bloodhound',
+	        _react3.default.createElement('img', { width: '170px', src: 'images/bloosdrop.png' })
 	      ),
 	      _react3.default.createElement(
 	        'h4',
@@ -34673,9 +34674,25 @@
 	      'div',
 	      null,
 	      _react3.default.createElement(
-	        'button',
-	        null,
-	        'from home'
+	        'span',
+	        { id: 'promises' },
+	        'Our Promises'
+	      ),
+	      _react3.default.createElement('img', { id: 'patientsPic', width: '1020px', src: 'images/patients.svg' }),
+	      _react3.default.createElement(
+	        'div',
+	        { id: 'fakeWords' },
+	        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus felis odio, imperdiet vehicula blandit ac, vehicula ut neque. Nam imperdiet accumsan lorem vitae varius. Sed eget efficitur turpis. Sed condimentum rhoncus tellus, dictum ullamcorper ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce tristique, urna sed porta dignissim, mi dolor consequat diam, a iaculis massa enim mollis orci. In bibendum elit a finibus molestie. Cras ut rutrum sem, venenatis semper nibh. In sed elit dolor. Quisque felis lectus, eleifend in vulputate a, venenatis a urna. Donec consequat convallis turpis sit amet rhoncus. Suspendisse eget libero ut massa tempus vehicula. Cras cursus sagittis diam at iaculis. Fusce felis metus, vehicula in cursus quis, pharetra at purus. Etiam tortor erat, luctus ac placerat at, semper at turpis. Nunc metus sem, elementum quis tincidunt vitae, mollis vitae tellus. Nam pretium sapien non nunc viverra dignissim. Integer rhoncus nisl euismod urna tristique, sit amet sollicitudin libero commodo. Donec nec eleifend odio, ac semper arcu. Duis ut hendrerit sapien. Etiam efficitur, diam vitae varius viverra, nisi sapien sagittis sapien, ac egestas mi elit non enim. Nam dignissim efficitur laoreet. Vivamus pharetra, libero ut ultricies blandit, purus odio luctus orci, auctor placerat diam massa aliquet odio. Nullam porttitor nec magna ut venenatis. Quisque non orci aliquet, pellentesque mauris at, elementum tellus. Maecenas sodales nisl eu bibendum bibendum. Vestibulum finibus, neque sit amet ultricies hendrerit, sem urna suscipit diam, ac molestie leo orci id neque.'
+	      ),
+	      _react3.default.createElement(
+	        'span',
+	        { id: 'mission' },
+	        'Mission'
+	      ),
+	      _react3.default.createElement(
+	        'div',
+	        { id: 'fakeWords2' },
+	        'In sed elit dolor. Quisque felis lectus, eleifend in vulputate a, venenatis a urna. Donec consequat convallis turpis sit amet rhoncus. Suspendisse eget libero ut massa tempus vehicula. Cras cursus sagittis diam at iaculis. Fusce felis metus, vehicula in cursus quis, pharetra at purus. Etiam tortor erat, luctus ac placerat at, semper at turpis. Nunc metus sem, elementum quis tincidunt vitae, mollis vitae tellus. Nam pretium sapien non nunc viverra dignissim. Integer rhoncus nisl euismod urna tristique, sit amet sollicitudin libero commodo. Donec nec eleifend odio, ac semper arcu. Duis ut hendrerit sapien. Etiam efficitur, diam vitae varius viverra, nisi sapien sagittis sapien, ac egestas mi elit non enim. Nam dignissim efficitur laoreet. Vivamus pharetra, libero ut ultricies blandit, purus odio luctus orci, auctor placerat diam massa aliquet odio. Nullam porttitor nec magna ut venenatis. Quisque non orci aliquet, pellentesque mauris at, elementum tellus. Maecenas sodales nisl eu bibendum bibendum. Vestibulum finibus, neque sit amet ultricies hendrerit, sem urna suscipit diam, ac molestie leo orci id neque.'
 	      )
 	    );
 	  }
@@ -34931,7 +34948,7 @@
 	        { className: "dropdown-content" },
 	        _react3.default.createElement(
 	          "div",
-	          null,
+	          { id: "indieButtons" },
 	          _react3.default.createElement(
 	            "button",
 	            { onClick: this.clickedMe0, id: "btn0", value: "O+" },
@@ -35051,7 +35068,7 @@
 	    });
 	    return _react3.default.createElement(
 	      "table",
-	      { className: "table table-bordered" },
+	      { id: "tableData", className: "table table-bordered" },
 	      _react3.default.createElement(
 	        "thead",
 	        null,
@@ -35147,7 +35164,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  height:1500px;\n}\n\n\n#bhTitle {\ntext-align:center;\nfont-family: 'Montserrat', sans-serif;\nfont-weight: bolder;\nfont-size:85px;\n}\n\n#slogan {\n  font-family: 'Montserrat', sans-serif;\n  text-align:center;\n  margin-right: 250px;\n  font-size: 30px\n}\n\n.dropbtn {\n    background-color: #4CAF50;\n    color: white;\n    padding: 8px;\n    font-size: 16px;\n    border: none;\n    border-radius: 5px;\n    cursor: pointer;\n}\n\n.dropdown {\n    position: relative;\n    display: inline-block;\n}\n\n.dropdown-content {\n    display: none;\n    position: absolute;\n    background-color: #f9f9f9;\n    min-width: 160px;\n    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\n}\n\n.dropdown-content a {\n    color: black;\n    padding: 12px 16px;\n    text-decoration: none;\n    display: block;\n}\n\n.dropdown-content a:hover {background-color: #f1f1f1}\n\n.dropdown:hover .dropdown-content {\n    display: block;\n}\n\n.dropdown:hover .dropbtn {\n    background-color: #3e8e41;\n}\n\nhr {\n    border-top: 15px solid #ef5350;\n    width:75%;\n}\n\n.titleButtons {\n  font-family: 'Montserrat', sans-serif;\n  border-style: hidden;\n  text-decoration: none;\n  background-color: #fff;\n  width: 300px;\n  text-align:center;\n  color:black;\n  margin-left: 52px;\n}\n\n#regForm {\n  margin-left: 119px;\n  margin-top:25px;\n}\n\n#submitButton {\n  margin-top: 20px;\n}\n\ninput {\n  font-family: 'Montserrat', sans-serif;\n}\n.form-control {\n  width:86%;\n}\n\n#buttons {\n  background-color: white;\n  width:250px;\n  font-size:24px;\n  margin-left: 70px;\n  border-style: none;\n}\n.titleButtons {\n  text-decoration: none;\n  background-color:none;\n}\n\n#bloodButton {\n  margin-top:35px;\n  margin-left: 145px;\n}\ntable {\n  margin-left: 145px;\n  margin-top:35px;\n}\n", ""]);
+	exports.push([module.id, "\n#bhTitle {\ntext-align:center;\nfont-family: 'Montserrat', sans-serif;\nfont-weight: bolder;\nfont-size:130px;\nposition:relative;\n}\n\n#promises {\n  font-family: 'Montserrat', sans-serif;\n  font-size: 65px;\n  font-weight: 800;\n  text-align: center;\n  margin-left: 50px;\n  top: 80px;\n  position:relative;\n}\n\n#mission {\n  font-family: 'Montserrat', sans-serif;\n  font-size: 65px;\n  font-weight: 800;\n  text-align: center;\n  margin-left: 50px;\n  top: 80px;\n  position:relative;\n}\n\n#slogan {\n  padding-top: -50px;\n  font-family: 'Montserrat', sans-serif;\n  text-align:center;\n  margin-right: 560px;\n  font-size: 45px;\n  position:relative;\n  top:-45px;\n}\n\n.dropbtn {\n    color: white;\n    padding: 8px;\n    font-size: 16px;\n    border: none;\n    border-radius: 5px;\n    cursor: pointer;\n}\n\n.dropdown {\n    position: relative;\n    display: inline-block;\n}\n\n.dropdown-content {\n    display: none;\n    position: absolute;\n}\n\n.dropdown-content a {\n    color: black;\n    text-decoration: none;\n    display: block;\n}\n\n.dropdown:hover .dropdown-content {\n    display: block;\n}\n\n.dropdown:hover .dropbtn {\n    width:15%;\n    height:10%;\n}\n\nhr {\n    border-top: 15px solid #ef5350;\n    width:90%;\n}\n\n.titleButtons {\n  font-family: 'Montserrat', sans-serif;\n  border-style: hidden;\n  text-decoration: none;\n  background-color: #fff;\n  width: 300px;\n  text-align:center;\n  color:black;\n  margin-left: 52px;\n}\n\n#regForm {\n  margin-left: 60px;\n  margin-top:80px;\n}\n#patientsPic {\n  margin-top: 30px;\n  margin-left:57px;\n}\n#submitButton {\n  margin-top: 20px;\n}\n\ninput {\n  font-family: 'Montserrat', sans-serif;\n}\ninput[type=\"text\"] {\n  border: 2px solid #555;\n  border-radius: 15px;\n}\n\n\n.form-control {\n  width:30%;\n  margin:-5px;\n}\n\n#buttons {\n  background-color: white;\n  width:250px;\n  font-size:24px;\n  margin-left: 70px;\n  border-style: none;\n}\n.titleButtons {\n  text-decoration: none;\n  background-color:none;\n}\n#indieButtons {\n  top:50px;\n  position:relative;\n  left:60px;\n  font-family: 'Montserrat', sans-serif;\n  color:black;\n}\n#bloodButton {\n  top:50px;\n  position:relative;\n  left:60px;\n  background-color: white;\n  color:black;\n  font-family: 'Montserrat', sans-serif;\n  border: 3px solid black;\n\n}\ntable {\n  margin-left: 90px;\n  margin-top:80px;\n  font-family: 'Montserrat', sans-serif;\n  border: 3px solid black;\n}\nth {\n  font-family: 'Montserrat', sans-serif;\n  font-weight: 900;\n  font-size: 17px;\n}\n\n#fakeWords {\n  margin-top: 50px;\n  font-family: 'Montserrat', sans-serif;\n  width:87%;\n  position:relative;\n  left:60px;\n}\n\n#fakeWords2 {\n  margin-top: 80px;\n  font-family: 'Montserrat', sans-serif;\n  width:87%;\n  position:relative;\n  left:60px;\n}\n\n#footerWords {\n  height:90%;\n  width:90%;\n  position:relative;\n  left:30px;\n  top:10px;\n}\n/*----------------------------------------------------*/\nhtml, body {\n  height: 100%;\n  margin: 0;\n}\n.wrapper {\n  min-height: 100%;\n\n  /* Equal to height of footer */\n  /* But also accounting for potential margin-bottom of last child */\n  margin-bottom: -1000px;\n}\n\n.push {\n  height: 100px;\n}\n\nfooter {\n  height:300px;\n  background: #ef5350;\n  color: white;\n  line-height: 50px;\n  padding: 0 20px;\n  width:72%;\n  margin:auto;\n}\n", ""]);
 
 	// exports
 

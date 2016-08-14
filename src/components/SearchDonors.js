@@ -195,7 +195,7 @@ const SearchDonors = React.createClass({
      <div className="dropdown">
        <button id = "bloodButton" className="dropbtn">Blood type</button>
        <div className="dropdown-content">
-          <div>
+          <div id= "indieButtons">
             <button onClick ={this.clickedMe0}id="btn0" value ="O+">O+</button>
             <button onClick ={this.clickedMe1}id ="btn1" value ="O-">O-</button>
             <button onClick ={this.clickedMe2}id ="btn2" value ="A+">A+</button>
@@ -246,7 +246,7 @@ const DataDisplay = React.createClass({
           );
       });
       return (
-        <table className="table table-bordered">
+        <table id = "tableData" className="table table-bordered">
           <thead>
               <tr>
                 <th>Name</th>
